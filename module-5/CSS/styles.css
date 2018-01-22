@@ -1,0 +1,316 @@
+
+body {
+    background: #8ab6dd url(../images/пляж1.png) no-repeat;
+    background-size: cover;
+}
+.wrapper {
+    margin: 0 auto;
+    margin-top: 47px;
+    padding: 0;
+    box-sizing: border-box;
+    width: 1024px;
+}
+
+.logo {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    position: relative;
+    width: 80px;
+    height: 42px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 60px;
+    font-family: 'Dorsa', sans-serif;
+    color: #263555;
+    border-radius: 50%;
+    background-color: #ffffff;
+    padding: 46px 29px;
+    line-height: 42px;
+}
+ 
+.menu1 {
+    display: block; 
+    list-style: none;
+    float: left;
+    margin-top: 40px;
+    margin-left: 94px;
+}
+.menu2 {
+    display: block; 
+    list-style: none;
+    float: right;
+    margin-top: 40px;
+    margin-right: 94px;
+}
+
+ul::after {
+    display: block;
+    content: ' ';
+    clear: both;
+    float: none;
+}
+
+ul.menu1 > li {
+    display: block;
+    float: left;
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+ul.menu2 > li {
+    display: block;
+    float: right;
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+ul.menu1 > li > a, ul.menu2 > li > a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 28px;
+}
+
+ul.menu1 > li > a:hover, .menu2 > li > a:hover {
+   color: #384869;
+}
+
+ul.submenu {
+    display: none;
+    position: absolute;
+    min-width: 65px;
+    top: 50px;
+    left: 13px;
+    background-color: white;    
+    border-radius: 10%;
+}
+
+ul.submenu > li {
+    display: block;
+}
+
+ul.submenu > li > a {
+    display: block;
+    padding: 5px;
+    color: #6b7488;
+    background-color:#fff;
+    text-decoration: none;
+    font-family: 'Pathway Gothic One', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    min-width: 10px;
+    border-radius: 10%;
+}
+.submenu:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -3px;
+    left: 47%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 2.5px 3px 2.5px;
+    border-color: transparent transparent #fff transparent;
+    color: #fff;
+}
+
+ul.menu1 > li:hover > .submenu {
+    display: block;
+}
+
+main {
+    margin: 0 auto;
+    width: 1024px;
+    height: 1172px;
+    background: #fff;
+    position: relative;
+}
+
+main .wrapper {
+    width: 1024px;
+    height: 690px;
+    margin-top: 65px;
+    padding: 60px 60px 0 60px;
+    position: relative;
+    display: block;
+}
+
+main img {
+    position: absolute;
+}
+main .slider img {
+    width: 902px;
+    height: 580px;
+}
+main h3 {
+    position: absolute;
+    bottom: 50%;
+    left: 60px;
+    padding: 22px 15px;
+    color: #263555;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 22px;
+    background: #ffffff;
+    text-transform: uppercase;
+}
+main h1 {
+    position: absolute;
+    bottom: 40%;
+    left: 60px;
+    padding: 18px 19px;
+    color: #ffffff;
+    background: #38afe5;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 34px;
+    text-transform: uppercase;
+}
+.left {
+    display: inline-block;
+    position: absolute;
+    width: 45px;
+    height: 90px;
+    color:#fff;
+    text-decoration: none;
+    background-color: #38afe5;
+    border-top-left-radius: 186px;
+    border-bottom-left-radius: 186px;
+    line-height: 90px;
+    top: 75%;
+    z-index: 10;
+    margin-right: 10px;
+    margin-left: 38px;
+    text-align: right;
+    
+}
+
+.right {
+    display: inline-block;
+    position: absolute;
+    width: 45px;
+    height: 90px;
+    color:#fff;
+    text-decoration: none;
+    background-color: #38afe5;
+    border-top-right-radius: 186px;
+    border-bottom-right-radius: 186px;
+    line-height: 90px;
+    top: 75%;
+    z-index: 10;
+    margin-left: 83px;    
+}
+
+.left img {
+    position: absolute;
+    top: 40%;
+    left: 24px;
+}
+.left:hover {
+    background-color: rgba(56, 177, 229, 0.46);
+}
+.right:hover {
+    background-color: rgba(56, 177, 229, 0.56);
+}
+
+.right img {
+    position: absolute;
+    top: 40%;
+    left: 6px;
+}
+main h2 {
+    margin-top: 14px;
+    color: #263555;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding-left: 60px;
+    margin-bottom: 50px;
+}
+.destination {
+    margin-left: 60px;
+    margin-right: 60px;
+    width: 903px;
+    display: block;
+    position: relative;
+}
+
+.destination img {
+    width: 288px;
+    height: 270px;
+}
+
+article .text {
+    position: absolute;
+    left: 0;
+    width: 147px;
+    height: 270px;
+    background: #193149;
+    z-index: 0;
+}
+
+
+article .text h5 {
+    display: block;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 30px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-transform: uppercase;
+
+}
+
+article .text p {
+    display: block;
+    padding: 0px 7px;
+    background: #193149;
+    text-align: center;
+    color: #ffffff;
+    font-size: 11px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 32px;
+}
+
+.text button{
+    text-align: center;
+    float: right;
+    width: 60px;
+    margin-right: 12px;
+}
+.venice {
+    position: absolute;
+    left: 0px;
+    background: url(img1.png);
+    z-index: 1;
+
+}
+
+.new-york {
+    position: absolute;
+    right: 595px;
+}
+
+.paris {
+    position: absolute;
+    right: 288px;
+}
+
+.venice:hover{
+    display: block;
+    z-index: 0;  
+}
+
+main .top-buttom {
+    position: fixed;
+    margin-left: 980px;
+    margin-top: 473px;
+}
+
