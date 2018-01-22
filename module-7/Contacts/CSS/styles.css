@@ -1,0 +1,439 @@
+body {
+    background: #8ab6dd url(../images/пляж.png) no-repeat;
+    background-size: cover;
+}
+.wrapper {
+    margin: 0 auto;
+    margin-top: 47px;
+    padding: 0;
+    box-sizing: border-box;
+    width: 1024px;
+    padding: 0 60px;
+}
+
+.logo {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    position: relative;
+    width: 80px;
+    height: 42px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 60px;
+    font-family: 'Dorsa', sans-serif;
+    color: #263555;
+    border-radius: 50%;
+    background-color: #ffffff;
+    padding: 46px 29px;
+    line-height: 42px;
+}
+ 
+.menu1 {
+    display: block; 
+    list-style: none;
+    float: left;
+    margin-top: 40px;
+    margin-left: 54px;
+    
+}
+.menu2 {
+    display: block; 
+    list-style: none;
+    float: right;
+    margin-top: 40px;
+    margin-right: 41px;
+    
+}
+
+ul::after {
+    display: block;
+    content: ' ';
+    clear: both;
+    float: none;
+}
+
+ul.menu1 > li {
+    display: block;
+    float: left;
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+ul.menu2 > li {
+    display: block;
+    float: right;
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+ul.menu1 > li > a, ul.menu2 > li > a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 28px;
+}
+
+ul.menu1 > li > a:hover, .menu2 > li > a:hover {
+   color: #384869;
+}
+
+ul.submenu {
+    display: none;
+    position: absolute;
+    min-width: 65px;
+    top: 50px;
+    left: 13px;
+    background-color: white;    
+    border-radius: 10%;
+}
+
+ul.submenu > li {
+    display: block;
+}
+
+ul.submenu > li > a {
+    display: block;
+    padding: 5px;
+    color: #6b7488;
+    background-color:#fff;
+    text-decoration: none;
+    font-family: 'Pathway Gothic One', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    min-width: 10px;
+    border-radius: 10%;
+}
+.submenu:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -3px;
+    left: 47%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 2.5px 3px 2.5px;
+    border-color: transparent transparent #fff transparent;
+    color: #fff;
+}
+
+ul.menu1 > li:hover > .submenu {
+    z-index: -1;
+}
+
+main {
+    width: 904px;
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 0 60px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding-bottom: 132px;
+}
+
+main .map h1 {
+    font-size: 32px;
+    font-family: 'Pathway Gothic One', sans-serif;
+    color: #263555;
+    margin-bottom: 50px;
+    padding-top: 100px;
+    text-transform: uppercase;
+}
+
+main iframe {
+    max-width: 442px;
+    max-height: 411px;
+}
+
+.table {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;
+    min-width: 208px;
+    color: #666565;
+    font-size: 13px;
+    line-height: 19px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 0px;
+    margin-left: 24px;
+}
+
+.table td.spum{
+    padding-left: 30px;
+}
+
+.caption_upper {
+    padding-bottom: 26px;
+    margin-top: 75px;
+    text-align: start;
+}
+
+.caption_bottom {
+    margin-top: 55px;
+    padding-bottom: 10px;
+    text-align: start;
+}
+
+.table .table_upper {
+    padding-bottom: 54px;
+}
+
+.table .email {
+    color: #fa7e7e;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    max-width: 212px;
+}
+
+.contacts h1 {
+    font-size: 32px;
+    font-family: 'Pathway Gothic One', sans-serif;
+    color: #263555;
+    padding-top: 100px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+form input{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-width: 200px;
+    background-color: #fbf6f8;
+    border: 1px solid #d4d0d0;
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+
+form p span {
+    color: #ff0000;
+    position: absolute;
+    font-size: 11px;
+    right: 22%;
+    top: 55%;
+    width: 101px;
+    text-align: right;
+}
+
+/* form input:invalid{
+    content: "*This field is required";
+    color: red;
+} */
+
+.contacts form input.message{
+    min-height: 232px;
+}
+
+textarea {
+    display: block;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0px; 
+    max-width: 199px;
+    min-width: 199px;
+    min-height: 230px;
+    max-height: 230px;
+    background-color: #fbf6f8;
+    border: 1px solid #d4d0d0;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    line-height: 26px;
+    color: #263555;
+    font-weight: 500;
+}
+
+.contacts form .buttons-box {
+    display: flex;
+    height: 30px;
+    justify-content: flex-end;
+}
+
+.contacts form input.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 30px;
+    max-width: 212px;
+    min-width: 80px;
+    background-color: #fbf6f8;
+    border: 1px solid #d4d0d0;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+    border-radius: 7px; 
+    text-align: center;
+    margin-left: 18px;
+}
+
+input[type="text"]::-webkit-input-placeholder,
+input[type="email"]::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    line-height: 19px;
+    font-size: 13px;
+    color: #263555;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-buttom {
+    position: fixed;
+    margin-left: 920px;
+    margin-top: 0px;
+    width: 33px;
+    height: 33px;
+    align-self: flex-end;
+}
+
+footer {
+    background-color: #30455b;
+    color: #fff;
+    width: 904px;
+    height: 135px;
+    margin: 0 auto;
+    padding: 0 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-transform: uppercase;
+    align-items: center;
+    
+}
+footer p {
+    font-size: 16px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    display: flex;
+    justify-content: center;
+    width: 209px;
+    
+    
+}
+footer .column-flex {
+    width: 904px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+footer .column {
+    
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 27px;
+}
+
+footer .column_1 {
+    width: 100px;
+    height: 45px;
+    flex-grow: 1;
+    align-items: center;
+    flex-wrap: wrap;
+    line-height: 27px;
+}
+
+footer .column_2 {
+    width: 100px;
+    height: 45px;
+    flex-grow: 1;
+    align-items: center;
+    flex-wrap: wrap;
+    line-height: 27px;
+}
+footer .column_3 {
+    width: 100px;
+    height: 45px;
+    flex-grow: 1;
+    align-items: center;
+    flex-wrap: wrap;
+    line-height: 27px;
+
+}
+footer .column_4 {
+    width: 100px;
+    height: 45px;
+    flex-grow: 2;
+    align-self: flex-start;
+    flex-wrap: wrap;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+footer .column_4 .tel {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 20px;
+}
+
+.social_networks {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 904px;
+    margin-top: 28px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.social_networks .bg-sprite{
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+    flex-basis: 40px;
+    width: 100%;
+    max-width: 196px;
+}
+
+
+.social_networks .bg-sprite >li {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-self: center;
+}
+
+.social_networks p{
+    display: flex;
+    align-self: center;
+    color: #fff;
+    margin-top: 26px;
+}
+
+.social_networks .bg-sprite li > a {
+    height: 40px;
+    width: 40px;
+}
+
+.social_networks .bg-sprite li > a:hover {
+    opacity: 0.5;
+}
+
+.social_networks .bg-sprite  .bg-twitter {
+    background: url('../images/css_sprites.png') -10px -10px;
+}
+
+.social_networks .bg-sprite  .bg-facebook {
+    background: url('../images/css_sprites.png') -70px -10px;
+}
+.social_networks .bg-sprite .bg-google {
+    background: url('../images/css_sprites.png') -130px -10px;
+}
+.social_networks .bg-sprite  .bg-instagram {
+    background: url('../images/css_sprites.png') -190px -10px;
+}
