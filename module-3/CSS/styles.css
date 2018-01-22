@@ -1,0 +1,120 @@
+* {
+    margin: auto;
+    padding: 0;
+}
+.wrapper {
+    display: block;
+    width: 480px;
+    margin: 60px auto;
+}
+h1{
+    font-size: 25px;
+    font-family: 'Pathway Gothic One', sans-serif;
+    color: #263555;
+    margin-bottom: 33px;
+}
+.first{
+    display: block;
+    margin-top: 28px;
+    margin-bottom: 51px;
+}
+h3{
+    margin-bottom: 22px;
+    font-size: 14px;
+    font-family: Arial;
+    color: #263555;
+}
+.first p{
+    font-family: Arial;
+    font-size: 12px;
+}
+.second{
+    display: block;
+    margin-bottom: 51px;
+       
+}
+.second h2{
+    margin-bottom: 32px;
+    font-size: 25px;
+    font-family: 'Pathway Gothic One', sans-serif;
+    color: #263555; 
+}
+.second p {
+    margin-left: 37px;
+    margin-right: 42px; 
+}
+.second ol li{
+    font-size: 12px;
+    font-family: Arial;
+    list-style-type: none;
+    counter-increment: step-counter;
+}
+.second li::before {
+    margin-left: 0px;
+    display: inline-block;
+    content: counter(step-counter);
+    margin-right: 10px;
+    font-size: 13px;
+    background-color: #38afe5;
+    color: white;
+    padding: 9px 12px;
+    border-radius: 28px;
+    font-family: Arial;
+    padding-left: 10px;
+}
+.super{
+    font-size: 14px;
+    vertical-align: super;
+    font-weight: bold;
+    color: #263555;
+}
+hr {
+    border: none; /* Убираем границу для браузера Firefox */
+    color: #dedbdb; /* Цвет линии для остальных браузеров */
+    background-color: #dedbdb; /* Цвет линии для браузера Firefox и Opera */
+    height: 1px; /* Толщина линии */
+   }
+.third {
+    margin-top: 52px;
+    font-family: Arial;
+    
+}
+.third h2{
+    margin-bottom: 27px;
+    font-size: 25px;
+    font-family: 'Pathway Gothic One', sans-serif;
+    color: #263555;
+}
+.third p{
+    font-size: 12px;
+    margin-bottom: 41px;
+}
+
+.up-side p{
+    list-style-type: none;
+    width: 204px;
+    height: 49%;
+    display: inline-block;
+    color:#263555;
+    font-size: 14px;
+    margin-bottom: 16px;
+    margin-top: 0px;
+    margin-left: 23px;
+}
+.down-side p{
+    list-style-type: none;
+    width: 204px;
+    height: 49%;
+    display: inline-block;
+    color:#263555;
+    font-size: 14px;
+    margin-bottom: 16px;
+    margin-top: 0px;
+    margin-left: 23px;
+}
+.up-side img{
+    margin-right: 16px;
+}
+.down-side img{
+    margin-right: 16px;
+}
