@@ -1,0 +1,332 @@
+body {
+    background: #8ab6dd url(../images/пляж.png) no-repeat;
+    background-size: cover;
+}
+.wrapper {
+    margin: 0 auto;
+    margin-top: 47px;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1024px;
+    padding: 0 60px;
+}
+
+.logo {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    position: relative;
+    width: 80px;
+    height: 42px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 60px;
+    font-family: 'Dorsa', sans-serif;
+    color: #263555;
+    border-radius: 50%;
+    background-color: #ffffff;
+    padding: 46px 29px;
+    line-height: 42px;
+}
+ 
+.menu1 {
+    display: block; 
+    list-style: none;
+    float: left;
+    margin-top: 40px;
+    margin-left: 54px;
+    
+}
+.menu2 {
+    display: block; 
+    list-style: none;
+    float: right;
+    margin-top: 40px;
+    margin-right: 41px;
+    
+}
+
+ul::after {
+    display: block;
+    content: ' ';
+    clear: both;
+    float: none;
+}
+
+ul.menu1 > li {
+    display: block;
+    float: left;
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+ul.menu2 > li {
+    display: block;
+    float: right;
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+ul.menu1 > li > a, ul.menu2 > li > a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 28px;
+}
+
+ul.menu1 > li > a:hover, .menu2 > li > a:hover {
+   color: #384869;
+}
+
+ul.submenu {
+    display: none;
+    position: absolute;
+    min-width: 65px;
+    top: 50px;
+    left: 13px;
+    background-color: white;    
+    border-radius: 10%;
+}
+
+ul.submenu > li {
+    display: block;
+}
+
+ul.submenu > li > a {
+    display: block;
+    padding: 5px;
+    color: #6b7488;
+    background-color:#fff;
+    text-decoration: none;
+    font-family: 'Pathway Gothic One', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    min-width: 10px;
+    border-radius: 10%;
+}
+.submenu:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -3px;
+    left: 47%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 2.5px 3px 2.5px;
+    border-color: transparent transparent #fff transparent;
+    color: #fff;
+}
+
+ul.menu1 > li:hover > .submenu {
+    display: block;
+}
+
+main {
+    width: 904px;
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 0 60px;
+    margin-top: 50px;
+}
+
+main h2{
+    padding: 98px 60px 49px 0;
+    font-size: 34px;
+    font-family: 'Pathway Gothic One', sans-serif;
+    color: #263555;
+    text-transform: uppercase;
+}
+
+.gallery {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;  
+    width: 904px;  
+    padding-bottom: 100px;
+}
+
+.gallery .image {
+    position: relative;
+    height: auto;
+    z-index: 1;
+    margin-bottom: 40px;
+    width: 288px;
+    height: 155px;
+   
+}
+
+.gallery .image::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    opacity: 0;
+    transition: opacity 0.4s;
+    z-index: 2;
+    cursor: zoom-in;
+}
+
+.gallery .image::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 33px;
+    height: 33px;
+    transform: translate(-50%, -50%);
+    background: url(../img/loop.png) center no-repeat;
+    -webkit-background-size: 33px 33px;
+    background-size: 33px 33px;
+    opacity: 0;
+    transition: opacity 0.4s;
+    z-index: 3
+}
+.gallery .image:hover:after, .gallery .image:hover:before{
+    opacity: 1;
+}
+
+main .top-button{
+    position: fixed;
+    margin-left: 920px;
+    margin-top: 0px; 
+}
+
+footer {
+    background-color: #30455b;
+    color: #fff;
+    width: 904px;
+    height: 135px;
+    margin: 0 auto;
+    padding: 0 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-transform: uppercase;
+    align-items: center;
+    
+}
+footer p {
+    font-size: 16px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    display: flex;
+    justify-content: center;
+    width: 209px;
+    
+    
+}
+footer .column-flex {
+    width: 904px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+footer .column {
+    
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .column_1 {
+    width: 100px;
+    height: 45px;
+    flex-grow: 1;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer .column_2 {
+    width: 100px;
+    height: 45px;
+    flex-grow: 1;
+    align-items: center;
+    flex-wrap: wrap;
+}
+footer .column_3 {
+    width: 100px;
+    height: 45px;
+    flex-grow: 1;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+footer .column_4 {
+    width: 100px;
+    height: 45px;
+    flex-grow: 2;
+    align-self: flex-start;
+    flex-wrap: wrap;
+    font-size: 18px;
+}
+
+.social_networks {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 904px;
+    margin-top: 28px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.social_networks .bg-sprite{
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+    flex-basis: 40px;
+    width: 100%;
+    max-width: 196px;
+}
+
+
+.social_networks .bg-sprite >li {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-self: center;
+}
+
+.social_networks p{
+    display: flex;
+    align-self: center;
+    color: #fff;
+    margin-top: 26px;
+}
+
+.social_networks .bg-sprite li > a {
+    height: 40px;
+    width: 40px;
+}
+
+.social_networks .bg-sprite li > a:hover {
+    opacity: 0.5;
+}
+
+.social_networks .bg-sprite  .bg-twitter {
+    background: url('../images/css_sprites.png') -10px -10px;
+}
+
+.social_networks .bg-sprite  .bg-facebook {
+    background: url('../images/css_sprites.png') -70px -10px;
+}
+.social_networks .bg-sprite .bg-google {
+    background: url('../images/css_sprites.png') -130px -10px;
+}
+.social_networks .bg-sprite  .bg-instagram {
+    background: url('../images/css_sprites.png') -190px -10px;
+}
